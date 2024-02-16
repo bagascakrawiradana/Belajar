@@ -1,0 +1,19 @@
+<?php
+// Online PHP compiler to run PHP program online
+// Print "Hello World!" message
+$baris = 5;
+// BINTANG SEDIKIT KE BANYAK
+for($i=0; $i<=$baris; $i++){
+    for($j=0; $j<$i; $j++){
+        echo "*";
+    }
+    echo "\n";
+}
+// BINTANG BANYAK KE SEDIKIT
+for($i=0; $i<=$baris; $i++){
+    for($j=$baris; $j>$i; $j--){
+        echo "*";
+    }
+    echo "\n";
+}
+?>

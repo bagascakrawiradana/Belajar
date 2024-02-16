@@ -1,0 +1,11 @@
+Bilangan_genap
+bilangan = [1,2,3,4,5,6,7,8,9,10]
+output bilangan
+output "Genap= "
+for(i=0; i<=9; i++){
+    if(bilangan[i]%2==0){
+        output bilangan[i]" "
+    }
+
+}
+

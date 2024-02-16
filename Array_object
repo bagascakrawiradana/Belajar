@@ -1,0 +1,32 @@
+<?php
+// Online PHP compiler to run PHP program online
+// Print "Hello World!" message
+
+$barangs = [
+    (object)[
+    'nama_barang' => 'roti',
+    'harga' => '5000',
+    'qty' => '4',
+    'diskon' => 0.05]
+    ,
+    (object)[
+    'nama_barang' => 'apel',
+    'harga' => '8000',
+    'qty' => '5',
+    'diskon' => 0.1]
+    ];
+// // var_dump($toko[0]->nama_barang);
+$totalseluruh=0;
+foreach($barangs as $i=>$barang){
+    $total_per_item = TotalPerItem($barang);
+    $totalseluruh = $totalseluruh + $total_per_item;
+    echo $i+1 ." $barang->nama_barang | Total = $total_per_item  \n";
+}
+echo "Total =".$totalseluruh;
+
+function TotalPerItem($barang){
+$diskon = $barang->harga*$barang->qty*$barang->diskon;
+return $total = $barang->harga*$barang->qty-$diskon;
+}
+
+?>

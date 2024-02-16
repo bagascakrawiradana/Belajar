@@ -1,0 +1,6 @@
+$harga_satuan = 10000
+$diskon = 0,05
+$qty = 9
+
+$total = ($qty*$harga_satuan)-$diskon;
+echo "Total =".$total;

@@ -1,0 +1,20 @@
+<?php
+// Online PHP compiler to run PHP program online
+// Print "Hello World!" message
+$bilangan =[1,30,4,10,8,5,8,6,77];
+echo "Bilangan= ".implode(",", $bilangan)."\n";
+$tampung = 0;
+
+
+for($i=0; $i<=count($bilangan)-1; $i++){
+    for($j=$i+1; $j<count($bilangan); $j++){
+        if($bilangan[$j]<$bilangan[$i]){
+            $tampung = $bilangan[$i];
+            $bilangan[$i] = $bilangan[$j];
+            $bilangan[$j]= $tampung;
+        }
+    }
+}
+echo "URUTAN TERKECIL =".implode(",", $bilangan);
+
+?>

@@ -1,0 +1,27 @@
+body {
+  background-color: aqua;
+}
+
+div {
+  background-color: brown;
+}
+
+table {
+  background-color: blueviolet;
+  align-content: center;
+}
+
+.container {
+  background-color: darkgoldenrod;
+}
+
+tbody {
+  margin-bottom: 10px;
+}
+
+.container-footer {
+  background-color: chocolate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
